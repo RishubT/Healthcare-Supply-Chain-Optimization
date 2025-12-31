@@ -5,7 +5,7 @@ Python supply chain analysis optimizing inventory &amp; logistics. Strategic ins
 
 This project transforms a raw supply chain dataset into actionable business frameworks using **Python**. It demonstrates the ability to move from unstructured data to prescriptive insights across inventory, quality, and logistics modules.
 
-## 📊 Project Highlights
+## Project Highlights
 
 ### **1. Inventory Rationalization (ABC Analysis)**
 
@@ -65,19 +65,11 @@ Developed a **Reliability Score** (Coefficient of Variation) to tier shipping pe
 **Statistics:** SciPy.
 
 
-* 
+*
 **Visualization:** Matplotlib, Seaborn.
 
-
-
-## 🚀 How to Run
+## How to Run
 
 1. Clone this repository.
 2. Ensure you have the `supply_chain_data.csv` in the root directory.
-
-
 3. Run the Jupyter Notebook: `jupyter notebook learning.ipynb`.
-
----
-
-**Would you like me to help you draft a LinkedIn post to share this project with your network?**
