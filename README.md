@@ -5,71 +5,43 @@ Python supply chain analysis optimizing inventory &amp; logistics. Strategic ins
 
 This project transforms a raw supply chain dataset into actionable business frameworks using **Python**. It demonstrates the ability to move from unstructured data to prescriptive insights across inventory, quality, and logistics modules.
 
-## Project Highlights
+**Executive Summary: Supply Chain Optimization Analysis**
 
-### **1. Inventory Rationalization (ABC Analysis)**
+Project Overview
+This analysis evaluates a supply chain dataset containing 100 product records across 24 variables. The goal was to transform unstructured data into actionable strategic frameworks for inventory management, quality control, and logistics efficiency.
 
-Using the **Pareto Principle**, I classified 100 SKUs based on their "Usage Value" (Cost  Products Sold).
+**1. Inventory Rationalization (ABC Analysis)**
+* To optimize working capital, products were classified using the Pareto Principle based on their "Usage Value" (Cost  Products Sold).
+* High Value (Class A): Represents 35% of the inventory. These are the most critical items requiring tight control.
+* Medium Value (Class B): Represents 26% of the inventory.
+* Low Value (Class C): Represents 39% of the inventory. These items are numerous but contribute the least value.
+* **Strategic Insight:** The team should evaluate retiring or reducing stock for Class C items, as they consume resources without producing significant revenue.
 
-* 
-**High Value (Class A):** 35% of inventory.
-
-
-* 
-**Low Value (Class C):** **39% of inventory**.
-
-
-* 
-**Insight:** Identified opportunities to retire low-moving "Class C" items to free up working capital.
-
-
-
-### **2. Quality & Cost Correlation**
-
-I performed a statistical interrogation to see if higher manufacturing spends reduced defects.
-
-* 
-**Method:** Pearson correlation and linear regression.
+**2. Manufacturing Quality & Cost Analysis**
+* A correlation study was conducted to determine if higher manufacturing spends resulted in superior product quality.
+* Findings: Statistical analysis and linear regression revealed no significant correlation between manufacturing costs and defect rates.
+* **Strategic Insight:** Increasing the budget for manufacturing is not a viable solution for reducing defects. Quality improvements must instead focus on process optimization and specific supplier performance metrics.
 
 
-* 
-**Finding:** Proved **no statistically significant correlation** exists between cost and quality in this dataset.
+**3. Logistics & Shipping Reliability**
+* Shipping performance was analyzed across carriers, routes, and transportation modes to identify the "Efficiency Frontier".
+* Cost vs. Speed: Using Air transportation costs approximately 68.47% more per day than shipping by Sea.
+* Reliability Scoring: Carriers and routes were tiered into Gold, Silver, and Avoid categories based on a Reliability Score (Coefficient of Variation).
+* Critical Alerts: Specific combinations, such as Carrier B on Route B and Carrier C on Route C, were flagged as "Avoid" due to high variance or poor mean shipping times.
 
+**4. Strategic Recommendations**
 
-* **Insight:** Quality issues require process-driven solutions rather than simple budget increases.
+1.  Reallocate Capital: Shift focus and budget from the 39% of "Low Value" SKUs toward "Class A" items to improve profitability.
+2.  Supplier Performance: Implement a weighted scorecard for suppliers, specifically targeting Supplier 3, who is currently performing significantly worse than peers.
+3.  Logistics Shift: Investigate moving more operations to Sea routes where time-sensitivity is lower, as the cost-per-day savings are substantial (68% reduction) with minimal impact on overall efficiency.
 
-### **3. Logistics Efficiency Frontier**
+** Tech Stack **
+* Analysis: Pandas, NumPy.
+* Statistics: SciPy.
+* Visualization: Matplotlib, Seaborn.
 
-Developed a **Reliability Score** (Coefficient of Variation) to tier shipping performance.
-
-* 
-**Cost Analysis:** Air transport costs **68.47% more per day** than Sea.
-
-
-* 
-**Provider Tiers:** Classified [Carrier + Route] combinations into **Gold, Silver, and Avoid** categories.
-
-
-* 
-**Insight:** Flagged high-variance routes as "broken processes" needing immediate intervention.
-
-
-
-## 🛠️ Tech Stack
-
-* 
-**Analysis:** Pandas, NumPy.
-
-
-* 
-**Statistics:** SciPy.
-
-
-*
-**Visualization:** Matplotlib, Seaborn.
-
-## How to Run
-
+** How to Run **
 1. Clone this repository.
 2. Ensure you have the `supply_chain_data.csv` in the root directory.
 3. Run the Jupyter Notebook: `jupyter notebook learning.ipynb`.
+
