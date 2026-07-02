@@ -35,12 +35,12 @@ This analysis evaluates a supply chain dataset containing 100 product records ac
 2.  Supplier Performance: Implement a weighted scorecard for suppliers, specifically targeting Supplier 3, who is currently performing significantly worse than peers.
 3.  Logistics Shift: Investigate moving more operations to Sea routes where time-sensitivity is lower, as the cost-per-day savings are substantial (68% reduction) with minimal impact on overall efficiency.
 
-** Tech Stack **
+**Tech Stack**
 * Analysis: Pandas, NumPy.
 * Statistics: SciPy.
 * Visualization: Matplotlib, Seaborn.
 
-** How to Run **
+**How to Run**
 1. Clone this repository.
 2. Ensure you have the `supply_chain_data.csv` in the root directory.
 3. Run the Jupyter Notebook: `jupyter notebook learning.ipynb`.
